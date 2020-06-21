@@ -28,3 +28,20 @@ fun <T> joinToString(
 ): String {
     return ""
 }
+
+//2.顶层属性
+const val LINE_SEP = "\n"
+
+var opCount = 0
+
+fun performOpration(){
+    opCount ++
+}
+
+fun getOperationCount(){
+    println(" operation performed $opCount times")
+
+    /**import后可以直接使用拓展函数*/
+    "Kot".lastChar()
+}
+
