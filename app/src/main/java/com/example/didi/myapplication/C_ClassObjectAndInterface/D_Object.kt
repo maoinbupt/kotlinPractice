@@ -1,5 +1,7 @@
 package com.example.didi.myapplication.C_ClassObjectAndInterface
 
+import android.view.View
+import android.widget.TextView
 import java.io.File
 
 /**
@@ -56,6 +58,26 @@ class D_Object {
     class Person2(val name:String){
         companion object Loader{
             fun fromJson(json:String) :Person2= Person2(json)
+        }
+    }
+
+
+    /**4.4.4对象表达式,改变写法的匿名内部类*/
+    fun setListener(textView :TextView){
+        var count = 0
+        textView.setOnClickListener{
+            //使用匿名对象,可以实现多个接口
+            object :View.OnClickListener, View.OnLongClickListener{
+                override fun onClick(p0: View?){
+                    count++
+
+                }
+
+                override fun onLongClick(p0: View?): Boolean {
+                    return true;
+                }
+            }
+
         }
     }
 
