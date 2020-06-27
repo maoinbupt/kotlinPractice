@@ -28,7 +28,7 @@ class D_Object {
         }
     }
     /**使用嵌套类实现 comparator*/
-    data class Person(val name: String) {
+    data class Person(val name: String, val age: Int = 1) {
         object NameComparator : Comparator<Person> {
             override fun compare(pl: Person, p2: Person): Int = pl.name.compareTo(p2.name)
         }
