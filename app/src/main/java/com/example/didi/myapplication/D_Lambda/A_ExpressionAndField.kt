@@ -64,6 +64,7 @@ class A_ExpressionAndField{
 
         fun Person.isMe() = name.equals("gf")
         val isMeBool = Person::isMe
+        isMeBool.call(Person("gf",true))
 
 
     }

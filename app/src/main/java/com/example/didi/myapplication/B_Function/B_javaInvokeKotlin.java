@@ -12,6 +12,7 @@ public class B_javaInvokeKotlin {
         // javad调用kotlin函数
 //        B_BetterInvokeFunctionKt.joinToString(null, ",", "(", ")");
         StringFunctions.joinToString(null, ",", "(", ")");
+        StringFunctions.joinToString(null, ",");
 
         //java访问拓展属性
         C_ExtentionFunctionAndFieldKt.getLastChar(new StringBuilder("Java"));//

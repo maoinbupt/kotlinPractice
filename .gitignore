@@ -4,6 +4,11 @@
 /.idea/workspace.xml
 /.idea/libraries
 /.idea
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/gradle.xml
+
+
 .DS_Store
 /build
 /captures

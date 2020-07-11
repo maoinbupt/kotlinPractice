@@ -20,6 +20,7 @@ class B_BetterInvokeFunction {
 }
 
 //1 命名参数 ，带默认参数值
+@JvmOverloads//生成多个java重载函数
 fun <T> joinToString(
         collection: Collection<T>,
         seperator: String = " , ",
